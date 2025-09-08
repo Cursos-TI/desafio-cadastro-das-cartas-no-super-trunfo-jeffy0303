@@ -2,7 +2,7 @@
 
 int main(){
     int carta, populacao, ponto_turistico;
-    float pib, area;
+    float pib, area, densidade_populacional;
     char estado;
     char codigo_da_carta[10], cidade[10];
 
@@ -38,6 +38,10 @@ int main(){
     printf("Número de Pontos Turistios: ");
     scanf(" %d", &ponto_turistico); // <-- espaço antes do %d para pular espaços e quebra de linha que ficaram na entrada
     printf("\n");
+
+    densidade_populacional = populacao / area;
+
+    printf("Densidade populacional:  %.3f\n", densidade_populacional);
     
     printf("Carta 2: \n");
 
@@ -62,6 +66,9 @@ int main(){
     printf("Número de Pontos Turistios: ");
     scanf(" %d", &ponto_turistico);
 
+    densidade_populacional = populacao / area;
+
+    printf("Densidade populacional:  %.3f\n", densidade_populacional);
 
     return 0;
 
